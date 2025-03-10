@@ -21,12 +21,7 @@ const Header = () => {
         </Container>
       </div>
 
-      <Image
-        src="/assets/decorations/wave-line-green.svg"
-        fill
-        alt="Green decoration"
-        className="h-auto! static!"
-      />
+      <div className="bg-[url(/assets/decorations/wave-line-green-sm.svg)] bg-no-repeat bg-cover h-[72px] -mt-1 lg:bg-[url(/assets/decorations/wave-line-green.svg)] lg:h-24"></div>
     </header>
   );
 };
