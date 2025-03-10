@@ -38,6 +38,7 @@ const ListImageCard = ({ image, title, list, color }: ListImageCardProps) => {
             sizes="600px"
             placeholder="blur"
             alt={image.alt}
+            className="object-cover"
           />
         </div>
 

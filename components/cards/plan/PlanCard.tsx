@@ -28,9 +28,12 @@ const PlanCard = ({
 
   return (
     <div
-      className={classNames("relative isolate transition-all", {
-        "bg-sky rounded-3xl pt-3": topChoice
-      })}
+      className={classNames(
+        "bg-sky rounded-3xl flex flex-col items-center justify-center relative isolate transition-all",
+        {
+          "pt-3": topChoice
+        }
+      )}
     >
       <p
         className={classNames(
@@ -45,7 +48,7 @@ const PlanCard = ({
 
       <div
         className={classNames(
-          "absolute z-[-1] -top-1 -left-1 rounded-3xl w-full h-full bg-sky/60 blur-sm m-1 transition-opacity",
+          "absolute -top-1 -left-1 z-[-1] rounded-3xl w-full h-full bg-sky/60 blur-sm m-1 transition-opacity",
           {
             "opacity-100": active,
             "opacity-0": !active
@@ -55,12 +58,21 @@ const PlanCard = ({
 
       <div
         className={classNames(
-          "bg-white flex justify-between rounded-3xl px-4 cursor-pointer transition-all",
+          "bg-sky absolute top-1/2 left-1/2 z-[-1] -translate-1/2 size-[calc(100%+4px)] rounded-3xl transition-opacity",
+          {
+            "opacity-100": active,
+            "opacity-0": !active
+          }
+        )}
+      />
+
+      <div
+        className={classNames(
+          "bg-white flex justify-between rounded-3xl px-4 cursor-pointer w-full transition-all",
           {
             "py-8": topChoice,
             "py-6": !topChoice,
-            "bg-linear-[290.8deg,#D7EEEB_0%,#FFFFFF_76.77%]": !active,
-            "scale-x-[0.98] -translate-y-1": active && topChoice
+            "bg-linear-[290.8deg,#D7EEEB_0%,#FFFFFF_76.77%]": !active
           }
         )}
         onClick={setActive}
