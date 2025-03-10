@@ -6,6 +6,7 @@ import Timer from "@/sections/timer/Timer";
 import Summary from "@/sections/summary/Summary";
 import Plan from "@/sections/plan/Plan";
 import Benefits from "@/sections/benefits/Benefits";
+import Results from "@/sections/results/Results";
 
 export default function Home() {
   return (
@@ -20,7 +21,7 @@ export default function Home() {
 
       <Benefits />
 
-      {/* Results */}
+      <Results />
 
       {/* Features */}
 
