@@ -18,7 +18,7 @@ const Summary = () => {
         </h1>
 
         <div className="flex flex-col items-center gap-y-4 lg:gap-y-6">
-          <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 max-w-[960px]">
+          <div className="grid grid-cols-1 gap-4 max-w-[960px] lg:grid-cols-2">
             <SummaryCard
               title="Physical symptoms:"
               level="high"

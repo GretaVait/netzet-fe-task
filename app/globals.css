@@ -13,18 +13,23 @@
 
 @theme {
   --color-turquoise-900: #0a3634;
+  --color-turquoise-850: #0c3f3d;
   --color-turquoise-800: #134a47;
   --color-turquoise-700: #1e6864;
   --color-turquoise-600: #327b7b;
+  --color-turquoise-500: #0e7a82;
   --color-turquoise-200: #a8c6c4;
   --color-turquoise-100: #d7eeeb;
   --color-pink: #f175b9;
   --color-cyan: #3df7ff;
   --color-sky: #5a91ff;
   --color-white: #ffffff;
-  --text-3\.\5xl: 2rem;
+  --color-gray: #ece9e3;
+  --text-2\.\5xl: 1.75rem; /* 28px */
+  --text-2\.\5xl--line-height: 2.25rem;
+  --text-3\.\5xl: 2rem; /* 32px */
   --text-3\.\5xl--line-height: 2.5rem;
-  --text-4\.\5xl: 2.5rem;
+  --text-4\.\5xl: 2.5rem; /* 40px */
   --text-4\.\5xl--line-height: 3rem;
 }
 
