@@ -8,6 +8,7 @@ import Plan from "@/sections/plan/Plan";
 import Benefits from "@/sections/benefits/Benefits";
 import Results from "@/sections/results/Results";
 import Features from "@/sections/features/Features";
+import Testimonials from "@/sections/testimonials/Testimonials";
 
 export default function Home() {
   return (
@@ -26,7 +27,7 @@ export default function Home() {
 
       <Features />
 
-      {/* Testimonials */}
+      <Testimonials />
 
       {/* Plan */}
 
