@@ -1,5 +1,9 @@
+// Packages
+import classNames from "classnames";
+
 interface GradientProps {
   borderRadius: 24 | 40;
+  blur?: boolean;
 }
 
 const radius = {
@@ -7,10 +11,15 @@ const radius = {
   40: "rounded-[40px]"
 };
 
-const Gradient = ({ borderRadius }: GradientProps) => {
+const Gradient = ({ borderRadius, blur }: GradientProps) => {
   return (
     <div
-      className={`absolute inset-0 z-[-1] bg-linear-[91.81deg,#F276D3_8.13%,#5A91FF_34.6%,#3EF8FF_81.81%] blur-sm ${radius[borderRadius]}`}
+      className={classNames(
+        `absolute inset-0 z-[-1] bg-linear-[91.81deg,#F276D3_8.13%,#5A91FF_34.6%,#3EF8FF_81.81%] ${radius[borderRadius]}`,
+        {
+          "blur-sm": blur
+        }
+      )}
     />
   );
 };

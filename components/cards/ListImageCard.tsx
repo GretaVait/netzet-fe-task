@@ -27,10 +27,10 @@ const colors = {
 
 const ListImageCard = ({ image, title, list, color }: ListImageCardProps) => {
   return (
-    <div className="relative isolate w-full max-w-[410px]">
-      <Gradient borderRadius={24} />
+    <div className="relative w-full max-w-[410px]">
+      <Gradient borderRadius={24} blur />
 
-      <div className="bg-white rounded-3xl overflow-hidden m-0.5 h-full">
+      <div className="bg-white rounded-3xl overflow-hidden m-0.5 h-[calc(100%-4px)]">
         <div className="relative w-full h-[293px]">
           <Image
             src={image.src}

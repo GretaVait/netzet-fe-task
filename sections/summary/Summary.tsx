@@ -4,6 +4,7 @@ import Image from "next/image";
 // Components
 import Container from "@/components/app/Container";
 import SummaryCard from "@/components/cards/summary/SummaryCard";
+import Gradient from "@/components/utils/Gradient";
 
 // Assets
 import ProductivityGraph from "@/public/assets/photos/graph.png";
@@ -41,21 +42,25 @@ const Summary = () => {
             />
           </div>
 
-          <div className="bg-turquoise-800 rounded-3xl py-10 px-4 lg:px-10 max-w-[640px]">
-            <Image
-              src={ProductivityGraph}
-              width={560}
-              height={365}
-              alt="Productivity Graph"
-              className="w-full hidden lg:block"
-            />
-            <Image
-              src={ProductivityGraphMobile}
-              width={310}
-              height={272}
-              alt="Productivity Graph"
-              className="w-full lg:hidden"
-            />
+          <div className="relative">
+            <Gradient borderRadius={24} />
+
+            <div className="bg-turquoise-800 rounded-3xl py-10 px-4 max-w-[640px] m-[1px] lg:px-10">
+              <Image
+                src={ProductivityGraph}
+                width={560}
+                height={365}
+                alt="Productivity Graph"
+                className="w-full hidden lg:block"
+              />
+              <Image
+                src={ProductivityGraphMobile}
+                width={310}
+                height={272}
+                alt="Productivity Graph"
+                className="w-full lg:hidden"
+              />
+            </div>
           </div>
         </div>
       </Container>
