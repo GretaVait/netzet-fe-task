@@ -22,7 +22,8 @@ const Plan = () => {
 
   return (
     <section>
-      <div className="bg-[url(/assets/decorations/wave-line-green-cyan-sm.svg)] bg-no-repeat bg-cover h-12 -mb-1 lg:bg-[url(/assets/decorations/wave-line-green-cyan.svg)] lg:h-40"></div>
+      <div className="bg-[url(/assets/decorations/wave-line-green-cyan-sm.svg)] bg-no-repeat bg-cover h-28 -mb-1 max-[425px]:h-12 lg:bg-[url(/assets/decorations/wave-line-green-cyan.svg)] lg:h-40"></div>
+
       <div className="relative bg-turquoise-850 py-10">
         <PaymentPopup
           active={displayPayment}
@@ -114,7 +115,7 @@ const Plan = () => {
           </div>
         </Container>
       </div>
-      <div className="bg-[url(/assets/decorations/wave-line-green-cyan-sm.svg)] bg-no-repeat bg-cover h-12 rotate-180 -mt-1 lg:bg-[url(/assets/decorations/wave-line-green-cyan.svg)] lg:h-40"></div>
+      <div className="bg-[url(/assets/decorations/wave-line-green-cyan-sm.svg)] bg-no-repeat bg-cover h-28 rotate-180 -mt-1 max-[425px]:h-12 lg:bg-[url(/assets/decorations/wave-line-green-cyan.svg)] lg:h-40"></div>
     </section>
   );
 };

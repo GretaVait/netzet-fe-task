@@ -21,7 +21,7 @@ const Header = () => {
         </Container>
       </div>
 
-      <div className="bg-[url(/assets/decorations/wave-line-green-sm.svg)] bg-no-repeat bg-cover h-[72px] -mt-1 lg:bg-[url(/assets/decorations/wave-line-green.svg)] lg:h-24"></div>
+      <div className="bg-[url(/assets/decorations/wave-line-green-sm.svg)] bg-no-repeat bg-cover h-40 max-[425px]:h-[72px] -mt-1 lg:bg-[url(/assets/decorations/wave-line-green.svg)] lg:h-30"></div>
     </header>
   );
 };

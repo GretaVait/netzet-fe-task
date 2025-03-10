@@ -13,7 +13,7 @@ const Benefits = () => {
   return (
     <section className="pt-16 pb-9 lg:pt-28 lg:pb-24">
       <Container>
-        <div className="flex flex-col items-stretch mx-auto gap-y-6 max-w-[960px] lg:flex-row lg:gap-x-8">
+        <div className="flex flex-col items-center mx-auto gap-y-6 max-w-[960px] lg:flex-row lg:items-stretch lg:gap-x-8">
           <ListImageCard
             image={{
               src: UserBeforeImage,
