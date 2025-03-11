@@ -10,6 +10,7 @@ import Results from "@/sections/results/Results";
 import Features from "@/sections/features/Features";
 import Testimonials from "@/sections/testimonials/Testimonials";
 import OurPromise from "@/sections/our-promise/OurPromise";
+import FAQ from "@/sections/faq/FAQ";
 
 export default function Home() {
   return (
@@ -35,7 +36,7 @@ export default function Home() {
 
         <OurPromise />
 
-        {/* FAQ */}
+        <FAQ />
       </main>
     </div>
   );
