@@ -41,8 +41,8 @@ const Plan = () => {
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 max-w-[1164px] mb-[54px] mx-auto lg:items-end">
             {plans.map((plan, index) => (
               <PlanCard
-                topChoice={plan.interval == 1}
-                active={selectedPlan.interval == plan.interval}
+                topChoice={plan.name == "1mo_60"}
+                active={selectedPlan.name == plan.name}
                 setActive={() => {
                   setSelectedPlan(plan);
                 }}

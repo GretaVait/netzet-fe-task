@@ -29,7 +29,7 @@ const Results = () => {
         className="w-full lg:hidden"
       />
 
-      <div className="bg-turquoise-700 absolute bottom-[48%] translate-y-1/2 left-0 z-[-1] w-full h-[90%] lg:hidden" />
+      <div className="bg-turquoise-700 absolute bottom-[48%] translate-y-1/2 left-0 z-[-1] w-full h-[90%] md:h-[89%] lg:hidden" />
 
       <Container>
         <div className="flex flex-col gap-y-10 pt-16 pb-20 lg:p-0 lg:absolute lg:top-[40%] lg:left-[60%] lg:-translate-y-1/2 lg:w-[400px] lg:ml-auto">
@@ -48,7 +48,7 @@ const Results = () => {
         </div>
       </Container>
 
-      <div className="bg-[url(/assets/decorations/wave-line-green-bottom-sm.svg)] bg-no-repeat bg-cover h-28 -mt-1 max-[425px]:h-16 md:h-32 lg:hidden"></div>
+      <div className="bg-[url(/assets/decorations/wave-line-green-bottom-sm.svg)] bg-no-repeat bg-cover h-28 -mt-1 max-[425px]:h-15 md:h-40 lg:hidden"></div>
     </section>
   );
 };

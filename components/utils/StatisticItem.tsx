@@ -9,7 +9,7 @@ interface StatisticItemProps {
 const StatisticItem = ({ percentage, description }: StatisticItemProps) => {
   return (
     <div className="text-center lg:text-left">
-      <p className="text-6xl font-extrabold bg-linear-[91.81deg,#F276D3_8.13%,#5A91FF_34.6%,#3EF8FF_81.81%] inline-block text-transparent bg-clip-text">
+      <p className="text-6xl font-extrabold bg-linear-[91.81deg,#F276D3_8.13%,#5A91FF_34.6%,#3EF8FF_81.81%] inline-block text-transparent bg-clip-text mb-6">
         {percentage}%
       </p>
 

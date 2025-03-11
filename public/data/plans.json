@@ -1,13 +1,16 @@
 [
   {
+    "name": "3mo_126",
     "interval": 3,
     "price": { "regular": 125.98, "discounted": 62.99 }
   },
   {
+    "name": "1mo_60",
     "interval": 1,
     "price": { "regular": 59.98, "discounted": 29.99 }
   },
   {
+    "name": "6mo_180",
     "interval": 6,
     "price": { "regular": 179.98, "discounted": 89.99 }
   }
