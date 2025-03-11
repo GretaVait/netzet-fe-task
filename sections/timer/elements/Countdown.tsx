@@ -1,12 +1,17 @@
 // Components
 import CountdownItem from "./CountdownItem";
 
-const Countdown = () => {
+interface CountdownProps {
+  minutes: number;
+  seconds: number;
+}
+
+const Countdown = ({ minutes, seconds }: CountdownProps) => {
   return (
     <div className="flex items-center gap-x-1">
-      <CountdownItem time={9} label="min" />
+      <CountdownItem time={minutes} label="min" />
       <p className="text-white font-medium text-xs">:</p>
-      <CountdownItem time={59} label="sec" />
+      <CountdownItem time={seconds} label="sec" />
     </div>
   );
 };

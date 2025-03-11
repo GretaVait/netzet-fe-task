@@ -1,9 +1,26 @@
+"use client";
+
+// Base
+import { useMemo } from "react";
+
+// Packages
+import { useTimer } from "react-timer-hook";
+
 // Components
 import Container from "@/components/app/Container";
 import Countdown from "./elements/Countdown";
 import Button from "@/components/app/Button";
 
 const Timer = () => {
+  const timestamp = useMemo(() => {
+    const time = new Date();
+    time.setSeconds(time.getSeconds() + 600); // 10 minutes timer
+
+    return time;
+  }, []);
+
+  const { minutes, seconds } = useTimer({ expiryTimestamp: timestamp });
+
   return (
     <section className="bg-turquoise-800 py-4">
       <Container>
@@ -13,7 +30,7 @@ const Timer = () => {
               The offer expires in
             </p>
 
-            <Countdown />
+            <Countdown minutes={minutes} seconds={seconds} />
           </div>
 
           <Button variant="secondary">Get my plan</Button>

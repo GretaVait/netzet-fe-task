@@ -2991,6 +2991,11 @@ react-property@2.0.2:
   resolved "https://registry.yarnpkg.com/react-property/-/react-property-2.0.2.tgz#d5ac9e244cef564880a610bc8d868bd6f60fdda6"
   integrity sha512-+PbtI3VuDV0l6CleQMsx2gtK0JZbZKbpdu5ynr+lbsuvtmgbNcS3VM0tuY2QjFNOcWxvXeHjDpy42RO+4U2rug==
 
+react-timer-hook@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/react-timer-hook/-/react-timer-hook-4.0.1.tgz#8f8432e58b1173717367f90212910f903576d8a0"
+  integrity sha512-tOye9WelyDctxIk2FnH+jqXhIx+mHr8wf1v2SR0ZJDYMKSH6JVAUj70OT3oOGWuWIFSCW4GxPDM9QGwEOAOOKA==
+
 react@^19.0.0:
   version "19.0.0"
   resolved "https://registry.yarnpkg.com/react/-/react-19.0.0.tgz#6e1969251b9f108870aa4bff37a0ce9ddfaaabdd"
