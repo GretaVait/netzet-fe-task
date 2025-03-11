@@ -9,6 +9,7 @@ import Benefits from "@/sections/benefits/Benefits";
 import Results from "@/sections/results/Results";
 import Features from "@/sections/features/Features";
 import Testimonials from "@/sections/testimonials/Testimonials";
+import OurPromise from "@/sections/our-promise/OurPromise";
 
 export default function Home() {
   return (
@@ -32,7 +33,7 @@ export default function Home() {
 
         <Plan />
 
-        {/* Promise */}
+        <OurPromise />
 
         {/* FAQ */}
       </main>
