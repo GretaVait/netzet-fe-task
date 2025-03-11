@@ -7,7 +7,7 @@ import classNames from "classnames";
 // Components
 import Steps from "@/components/utils/steps/Steps";
 import OrderSummary from "./order-summary/OrderSummary";
-import PaymentMethod from "./payment-method/PaymentMethod";
+import PaymentMethod from "./PaymentMethod";
 
 // Interfaces
 import { PlanData } from "@/interfaces/PlanData";

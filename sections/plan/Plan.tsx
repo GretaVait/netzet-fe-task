@@ -6,7 +6,7 @@ import Image from "next/image";
 
 // Components
 import Container from "@/components/app/Container";
-import PlanCard from "@/components/cards/plan/PlanCard";
+import PlanCard from "@/components/cards/PlanCard";
 import Button from "@/components/app/Button";
 import PaymentPopup from "@/components/popups/payment-popup/PaymentPopup";
 

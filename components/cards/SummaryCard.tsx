@@ -1,5 +1,5 @@
 // Components
-import ProgressBar from "@/components/utils/progress-bar/ProgressBar";
+import ProgressBar from "@/components/utils/ProgressBar";
 
 const levels = {
   high: {

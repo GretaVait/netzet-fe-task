@@ -3,7 +3,7 @@ import Image from "next/image";
 
 // Components
 import Container from "@/components/app/Container";
-import SummaryCard from "@/components/cards/summary/SummaryCard";
+import SummaryCard from "@/components/cards/SummaryCard";
 import Gradient from "@/components/utils/Gradient";
 
 // Assets

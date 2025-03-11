@@ -1,6 +1,9 @@
 // Packages
 import classNames from "classnames";
 
+// Helpers
+import { displayTwoDecimals } from "@/helpers/displayTwoDecimals";
+
 // Components
 import RadioButton from "@/components/utils/RadioButton";
 
@@ -22,10 +25,6 @@ const PlanCard = ({
   interval,
   price
 }: PlanCardProps) => {
-  const displayTwoDecimals = (number: number) => {
-    return Math.floor(number * 100) / 100;
-  };
-
   return (
     <div
       className={classNames(
