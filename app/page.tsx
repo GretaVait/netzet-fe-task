@@ -17,23 +17,25 @@ export default function Home() {
 
       <Header />
 
-      <Summary />
+      <main>
+        <Summary />
 
-      <Plan />
+        <Plan />
 
-      <Benefits />
+        <Benefits />
 
-      <Results />
+        <Results />
 
-      <Features />
+        <Features />
 
-      <Testimonials />
+        <Testimonials />
 
-      {/* Plan */}
+        <Plan />
 
-      {/* Promise */}
+        {/* Promise */}
 
-      {/* FAQ */}
+        {/* FAQ */}
+      </main>
     </div>
   );
 }

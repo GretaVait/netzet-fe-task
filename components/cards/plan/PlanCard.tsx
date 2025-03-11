@@ -29,9 +29,10 @@ const PlanCard = ({
   return (
     <div
       className={classNames(
-        "bg-sky rounded-3xl flex flex-col items-center justify-center relative isolate transition-all",
+        "bg-sky rounded-3xl flex flex-col items-center justify-center relative isolate transition-shadow",
         {
-          "pt-3": topChoice
+          "pt-3": topChoice,
+          "ring-2 ring-sky": active
         }
       )}
     >
@@ -58,17 +59,7 @@ const PlanCard = ({
 
       <div
         className={classNames(
-          "bg-sky absolute top-1/2 left-1/2 z-[-1] -translate-1/2 size-[calc(100%+4px)] rounded-3xl transition-opacity",
-          {
-            "opacity-100": active,
-            "opacity-0": !active
-          }
-        )}
-      />
-
-      <div
-        className={classNames(
-          "bg-white flex justify-between rounded-3xl px-4 cursor-pointer w-full transition-all",
+          "bg-white flex justify-between rounded-3xl px-4 cursor-pointer w-full transition-colors",
           {
             "py-8": topChoice,
             "py-6": !topChoice,
@@ -83,13 +74,17 @@ const PlanCard = ({
           <div className="flex flex-col gap-y-2">
             <p className="text-xl font-bold">{interval}-month plan</p>
 
-            <p className="text-xs">Billed every {interval} month</p>
+            <p className="text-xs text-turquoise-700">
+              Billed every {interval} month
+            </p>
 
             <p className="text-xs">
               <span className="text-pink line-through">
                 USD {price.regular}
               </span>{" "}
-              <span className="font-bold">USD {price.discounted}</span>
+              <span className="font-bold text-turquoise-700">
+                USD {price.discounted}
+              </span>
             </p>
           </div>
         </div>
