@@ -18,7 +18,7 @@ const RadioButton = ({ active }: RadioButtonProps) => {
     >
       <div
         className={classNames(
-          "rounded-full bg-white size-2 transition-opacity",
+          "rounded-full bg-white size-[9px] transition-opacity",
           { "opacity-100": active, "opacity-0": !active }
         )}
       ></div>

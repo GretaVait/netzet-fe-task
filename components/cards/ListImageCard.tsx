@@ -17,11 +17,13 @@ interface ListImageCardProps {
 const colors = {
   pink: {
     text: "text-pink",
-    backgroundColor: "bg-pink"
+    backgroundColor: "bg-pink",
+    marker: "marker:text-pink"
   },
   blue: {
     text: "text-sky",
-    backgroundColor: "bg-sky"
+    backgroundColor: "bg-sky",
+    marker: "marker:text-sky"
   }
 };
 
@@ -50,7 +52,7 @@ const ListImageCard = ({ image, title, list, color }: ListImageCardProps) => {
           </h3>
 
           <ul
-            className={`flex flex-col gap-y-3 list-disc pl-5 marker:${colors[color].text}`}
+            className={`flex flex-col gap-y-3 list-disc pl-5 ${colors[color].marker}`}
           >
             {list.map((item, index) => (
               <li key={index}>

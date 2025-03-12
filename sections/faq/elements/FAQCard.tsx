@@ -2,13 +2,15 @@
 
 // Base
 import { useEffect, useRef, useState } from "react";
-import Image from "next/image";
 
 // Packages
 import classNames from "classnames";
 
 // Components
 import Gradient from "@/components/utils/Gradient";
+
+// Assets
+import { Arrow } from "@/icons/Arrow";
 
 interface FAQCardProps {
   question: string;
@@ -46,7 +48,7 @@ const FAQCard = ({ question, answer }: FAQCardProps) => {
 
       <div className="bg-white rounded-3xl">
         <button
-          className="flex items-center justify-between gap-x-6 w-full px-6 h-[74px]"
+          className="flex items-center justify-between gap-x-6 w-full px-6 h-[74px] cursor-pointer"
           onClick={() => toggleAccordion(!accordionState)}
         >
           <p className="font-medium text-left leading-5">{question}</p>
@@ -60,15 +62,13 @@ const FAQCard = ({ question, answer }: FAQCardProps) => {
               }
             )}
           >
-            <Image
-              src="/assets/icons/arrow.svg"
-              width={15}
-              height={10}
-              alt="Arrow icon"
-              className={classNames("transition-transform", {
-                "rotate-180": accordionState,
-                "rotate-0": !accordionState
-              })}
+            <Arrow
+              className={classNames(
+                classNames("transition-transform", {
+                  "rotate-180 fill-white": accordionState,
+                  "rotate-0 fill-turquoise-700": !accordionState
+                })
+              )}
             />
           </div>
         </button>

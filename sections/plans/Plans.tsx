@@ -16,13 +16,13 @@ import AcceptedCards from "@/public/assets/photos/cards.png";
 // Data
 import plans from "@/public/data/plans.json";
 
-const Plan = () => {
+const Plans = () => {
   const [selectedPlan, setSelectedPlan] = useState(plans[1]);
   const [displayPayment, setDisplayPayment] = useState(false);
 
   return (
-    <section>
-      <div className="bg-[url(/assets/decorations/wave-line-green-cyan-sm.svg)] bg-no-repeat bg-cover h-28 -mb-1 max-[425px]:h-12 lg:bg-[url(/assets/decorations/wave-line-green-cyan.svg)] lg:h-40"></div>
+    <section id="plans">
+      <div className="bg-[url(/assets/decorations/wave-line-green-cyan-sm.svg)] bg-no-repeat bg-cover h-28 -mb-1 max-[425px]:h-12 lg:bg-[url(/assets/decorations/wave-line-green-cyan.svg)] lg:h-40" />
 
       <div className="relative bg-turquoise-850 py-10">
         <PaymentPopup
@@ -115,9 +115,10 @@ const Plan = () => {
           </div>
         </Container>
       </div>
-      <div className="bg-[url(/assets/decorations/wave-line-green-cyan-sm.svg)] bg-no-repeat bg-cover h-28 rotate-180 -mt-1 max-[425px]:h-12 lg:bg-[url(/assets/decorations/wave-line-green-cyan.svg)] lg:h-40"></div>
+
+      <div className="bg-[url(/assets/decorations/wave-line-green-cyan-sm.svg)] bg-no-repeat bg-cover h-28 rotate-180 -mt-1 max-[425px]:h-12 lg:bg-[url(/assets/decorations/wave-line-green-cyan.svg)] lg:h-40" />
     </section>
   );
 };
 
-export default Plan;
+export default Plans;

@@ -73,17 +73,13 @@ const PlanCard = ({
           <div className="flex flex-col gap-y-2">
             <p className="text-xl font-bold">{interval}-month plan</p>
 
-            <p className="text-xs text-turquoise-700">
-              Billed every {interval} month
-            </p>
+            <p className="text-xs">Billed every {interval} month</p>
 
             <p className="text-xs">
               <span className="text-pink line-through">
                 USD {price.regular}
               </span>{" "}
-              <span className="font-bold text-turquoise-700">
-                USD {price.discounted}
-              </span>
+              <span className="font-bold">USD {price.discounted}</span>
             </p>
           </div>
         </div>
@@ -96,7 +92,7 @@ const PlanCard = ({
             </p>
           </div>
 
-          <p className="text-sm text-pink line-through">
+          <p className="text-xs text-pink line-through">
             USD {displayTwoDecimals(price.regular / (interval * 30)) - 0.01} per
             day
           </p>

@@ -4,7 +4,7 @@ import Header from "@/components/common/Header";
 // Sections
 import Timer from "@/sections/timer/Timer";
 import Summary from "@/sections/summary/Summary";
-import Plan from "@/sections/plan/Plan";
+import Plans from "@/sections/plans/Plans";
 import Benefits from "@/sections/benefits/Benefits";
 import Results from "@/sections/results/Results";
 import Features from "@/sections/features/Features";
@@ -22,7 +22,7 @@ export default function Home() {
       <main>
         <Summary />
 
-        <Plan />
+        <Plans />
 
         <Benefits />
 
@@ -32,7 +32,7 @@ export default function Home() {
 
         <Testimonials />
 
-        <Plan />
+        <Plans />
 
         <OurPromise />
 

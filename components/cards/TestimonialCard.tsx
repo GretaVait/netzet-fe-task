@@ -26,7 +26,7 @@ const TestimonialCard = ({
     <div className="relative">
       <Gradient borderRadius={24} blur />
 
-      <div className="bg-white p-6 rounded-3xl">
+      <div className="bg-white p-6 rounded-3xl m-[1px]">
         <div className="flex items-center gap-x-[25px] mb-[25px]">
           <Image
             src={`/assets/users/${avatar}.png`}

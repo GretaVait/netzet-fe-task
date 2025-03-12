@@ -74,6 +74,7 @@ const OurPromise = () => {
                 src="/assets/photos/head-of-science.png"
                 width={94}
                 height={94}
+                sizes="300px"
                 alt="Head of science image"
               />
 

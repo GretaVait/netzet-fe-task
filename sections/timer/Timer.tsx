@@ -2,6 +2,7 @@
 
 // Base
 import { useMemo } from "react";
+import { useRouter } from "next/navigation";
 
 // Packages
 import { useTimer } from "react-timer-hook";
@@ -12,9 +13,11 @@ import Countdown from "./elements/Countdown";
 import Button from "@/components/app/Button";
 
 const Timer = () => {
+  const router = useRouter();
+
   const timestamp = useMemo(() => {
     const time = new Date();
-    time.setSeconds(time.getSeconds() + 600); // 10 minutes timer
+    time.setSeconds(time.getSeconds() + 600); // 10 minute timer
 
     return time;
   }, []);
@@ -33,7 +36,14 @@ const Timer = () => {
             <Countdown minutes={minutes} seconds={seconds} />
           </div>
 
-          <Button variant="secondary">Get my plan</Button>
+          <Button
+            variant="secondary"
+            onClick={() => {
+              router.push("#plans");
+            }}
+          >
+            Get my plan
+          </Button>
         </div>
       </Container>
     </section>
